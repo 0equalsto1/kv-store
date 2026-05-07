@@ -1,0 +1,112 @@
+{
+  "project_name": "kv-store",
+  "repository_type": "monorepo",
+  "primary_language": "Java 26",
+  "parts": [
+    {
+      "id": "core",
+      "display_name": "Core Library",
+      "type": "library",
+      "path": "core",
+      "doc_path": "docs/architecture-core.md"
+    },
+    {
+      "id": "io",
+      "display_name": "IO Library",
+      "type": "library",
+      "path": "io",
+      "doc_path": "docs/architecture-io.md"
+    },
+    {
+      "id": "indexing",
+      "display_name": "Indexing Library",
+      "type": "library",
+      "path": "indexing",
+      "doc_path": "docs/architecture-indexing.md"
+    },
+    {
+      "id": "cache",
+      "display_name": "Cache Library",
+      "type": "library",
+      "path": "cache",
+      "doc_path": "docs/architecture-cache.md"
+    },
+    {
+      "id": "wal",
+      "display_name": "WAL Library",
+      "type": "library",
+      "path": "wal",
+      "doc_path": "docs/architecture-wal.md"
+    },
+    {
+      "id": "memtable",
+      "display_name": "Memtable Library",
+      "type": "library",
+      "path": "memtable",
+      "doc_path": "docs/architecture-memtable.md"
+    },
+    {
+      "id": "sstable",
+      "display_name": "SSTable Library",
+      "type": "library",
+      "path": "sstable",
+      "doc_path": "docs/architecture-sstable.md"
+    },
+    {
+      "id": "compaction",
+      "display_name": "Compaction Library",
+      "type": "library",
+      "path": "compaction",
+      "doc_path": "docs/architecture-compaction.md"
+    },
+    {
+      "id": "concurrency",
+      "display_name": "Concurrency Library",
+      "type": "library",
+      "path": "concurrency",
+      "doc_path": "docs/architecture-concurrency.md"
+    },
+    {
+      "id": "telemetry",
+      "display_name": "Telemetry Library",
+      "type": "library",
+      "path": "telemetry",
+      "doc_path": "docs/architecture-telemetry.md"
+    },
+    {
+      "id": "tools",
+      "display_name": "Tools Library",
+      "type": "library",
+      "path": "tools",
+      "doc_path": "docs/source-tree-analysis.md"
+    },
+    {
+      "id": "engine",
+      "display_name": "Engine Library",
+      "type": "library",
+      "path": "engine",
+      "doc_path": "docs/architecture-engine.md"
+    },
+    {
+      "id": "api",
+      "display_name": "API Service",
+      "type": "backend",
+      "path": "api",
+      "doc_path": "docs/api-contracts.md"
+    },
+    {
+      "id": "integration-tests",
+      "display_name": "Integration Tests",
+      "type": "library",
+      "path": "integration-tests",
+      "doc_path": "docs/development-guide.md"
+    },
+    {
+      "id": "benchmarks",
+      "display_name": "Benchmarks",
+      "type": "library",
+      "path": "benchmarks",
+      "doc_path": "docs/development-guide.md"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+dependencies {
+    implementation project(':core')
+    implementation project(':io')
+    implementation project(':wal')
+    implementation project(':memtable')
+    implementation project(':indexing')
+    implementation project(':sstable')
+    implementation project(':cache')
+    implementation project(':concurrency')
+    implementation project(':compaction')
+}

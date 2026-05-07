@@ -1,0 +1,30 @@
+plugins {
+    id 'me.champeau.jmh'
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':engine')
+    implementation project(':telemetry')
+    implementation project(':cache')
+    implementation project(':memtable')
+    implementation project(':wal')
+    implementation project(':io')
+    implementation project(':sstable')
+    
+    // JMH dependencies
+    jmh 'org.openjdk.jmh:jmh-core:1.37'
+    jmh 'org.openjdk.jmh:jmh-generator-annprocess:1.37'
+}
+
+jmh {
+    warmupIterations = 2
+    warmup = '2s'
+    iterations = 3
+    timeOnIteration = '5s'
+    fork = 1
+    benchmarkMode = ['thrpt']
+    timeUnit = 'ms'
+    forceGC = true
+    duplicateClassesStrategy = DuplicatesStrategy.EXCLUDE
+}
